@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imposto Inteligente 2026 — Reduza Legalmente Seus Impostos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --verde: #0D3B2E;
+    --verde-m: #1A6B4A;
+    --verde-c: #27AE60;
+    --ouro: #C9921A;
+    --ouro-c: #F0C040;
+    --creme: #FEFDF8;
+    --bg: #F9F8F3;
+    --texto: #1C1C1C;
+    --cinza: #6B6B6B;
+    --borda: #E2E0D8;
+    --card-bg: #FFFFFF;
+    --r: 14px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'DM Sans',sans-serif;
+    background:var(--creme);
+    color:var(--texto);
+    line-height:1.65;
+    overflow-x:hidden;
+  }
+
+  /* ── HERO ── */
+  .hero{
+    background:var(--verde);
+    position:relative;
+    overflow:hidden;
+    padding:0;
+  }
+  .hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 50%, rgba(26,107,74,0.55) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(201,146,26,0.18) 0%, transparent 60%);
+  }
+  .hero-inner{
+    position:relative;
+    z-index:2;
+    max-width:1120px;
+    margin:0 auto;
+    padding:80px 24px 90px;
+    display:grid;
+    grid-template-columns:1fr 420px;
+    gap:64px;
+    align-items:center;
+  }
+  .badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:rgba(201,146,26,0.2);
+    border:1px solid rgba(201,146,26,0.5);
+    color:var(--ouro-c);
+    font-family:'Syne',sans-serif;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    padding:6px 14px;
+    border-radius:100px;
+    margin-bottom:24px;
+  }
+  .badge::before{content:'◆';font-size:7px}
+  h1{
+    font-family:'Syne',sans-serif;
+    font-size:clamp(38px,5vw,60px);
+    font-weight:800;
+    color:#FFFFFF;
+    line-height:1.08;
+    margin-bottom:22px;
+    letter-spacing:-.02em;
+  }
+  h1 em{
+    font-style:normal;
+    color:var(--ouro-c);
+  }
+  .hero-sub{
+    font-size:18px;
+    color:rgba(255,255,255,0.78);
+    max-width:520px;
+    line-height:1.6;
+    margin-bottom:36px;
+  }
+  .hero-stats{
+    display:flex;
+    gap:32px;
+    margin-bottom:44px;
+    flex-wrap:wrap;
+  }
+  .stat{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+  .stat-n{
+    font-family:'Syne',sans-serif;
+    font-size:28px;
+    font-weight:800;
+    color:var(--ouro-c);
+    line-height:1;
+  }
+  .stat-l{
+    font-size:12px;
+    color:rgba(255,255,255,.6);
+    text-transform:uppercase;
+    letter-spacing:.06em;
+  }
+
+  /* Book Mockup */
+  .book-wrap{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .book{
+    position:relative;
+    width:280px;
+    height:370px;
+    transform-style:preserve-3d;
+    transform:perspective(900px) rotateY(-18deg);
+    filter:drop-shadow(-24px 24px 40px rgba(0,0,0,0.55));
+    animation:float 4s ease-in-out infinite;
+  }
+  @keyframes float{
+    0%,100%{transform:perspective(900px) rotateY(-18deg) translateY(0)}
+    50%{transform:perspective(900px) rotateY(-18deg) translateY(-12px)}
+  }
+  .book-front{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(155deg,#0D3B2E 0%,#1A6B4A 55%,#0D3B2E 100%);
+    border-radius:4px 8px 8px 4px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:28px 22px;
+    overflow:hidden;
+  }
+  .book-front::before{
+    content:'';
+    position:absolute;
+    top:0;left:0;right:0;
+    height:6px;
+    background:linear-gradient(90deg,#C9921A,#F0C040,#C9921A);
+  }
+  .book-front::after{
+    content:'';
+    position:absolute;
+    bottom:0;left:0;right:0;
+    height:6px;
+    background:linear-gradient(90deg,#C9921A,#F0C040,#C9921A);
+  }
+  .book-spine{
+    position:absolute;
+    left:-18px;top:4px;bottom:4px;
+    width:18px;
+    background:linear-gradient(180deg,#072218 0%,#0D3B2E 50%,#072218 100%);
+    border-radius:4px 0 0 4px;
+    transform:rotateY(90deg);
+    transform-origin:right center;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .book-title{
+    color:#FFFFFF;
+    font-family:'Syne',sans-serif;
+    font-size:20px;
+    font-weight:800;
+    line-height:1.15;
+    position:relative;z-index:1;
+  }
+  .book-title em{
+    display:block;
+    font-style:normal;
+    color:var(--ouro-c);
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:6px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+  }
+  .book-circle{
+    position:absolute;
+    width:200px;height:200px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.04);
+    top:50%;left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .book-year{
+    color:var(--ouro-c);
+    font-family:'Syne',sans-serif;
+    font-weight:700;
+    font-size:32px;
+    position:relative;z-index:1;
+  }
+  .book-tag{
+    background:rgba(201,146,26,0.25);
+    border:1px solid rgba(201,146,26,0.5);
+    color:var(--ouro-c);
+    font-size:10px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    padding:4px 10px;
+    border-radius:4px;
+    width:fit-content;
+    position:relative;z-index:1;
+  }
+
+  /* ── CTA BOX HERO ── */
+  .cta-hero-box{
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:16px;
+    padding:28px 32px;
+    margin-top:0;
+  }
+  .price-row{
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+    margin-bottom:8px;
+  }
+  .price-old{
+    font-size:16px;
+    color:rgba(255,255,255,0.45);
+    text-decoration:line-through;
+  }
+  .price-new{
+    font-family:'Syne',sans-serif;
+    font-size:42px;
+    font-weight:800;
+    color:#FFFFFF;
+    line-height:1;
+  }
+  .price-new span{font-size:20px}
+  .price-note{
+    font-size:13px;
+    color:rgba(255,255,255,0.6);
+    margin-bottom:22px;
+  }
+  .btn-primary{
+    display:block;
+    width:100%;
+    background:linear-gradient(135deg,#C9921A,#F0C040);
+    color:#0D3B2E;
+    font-family:'Syne',sans-serif;
+    font-size:16px;
+    font-weight:800;
+    text-align:center;
+    padding:18px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    letter-spacing:.04em;
+    transition:all .25s;
+    cursor:pointer;
+    border:none;
+    box-shadow:0 8px 24px rgba(201,146,26,0.4);
+  }
+  .btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 32px rgba(201,146,26,0.55);
+  }
+  .btn-primary:active{transform:translateY(0)}
+  .trust-line{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    margin-top:14px;
+    font-size:12px;
+    color:rgba(255,255,255,0.5);
+  }
+  .trust-line::before,.trust-line::after{
+    content:'';
+    flex:1;
+    height:1px;
+    background:rgba(255,255,255,0.12);
+  }
+
+  /* ── CONTAINER ── */
+  .container{max-width:1100px;margin:0 auto;padding:0 24px}
+
+  /* ── SEÇÃO DORES ── */
+  .pain{
+    background:#FFFFFF;
+    padding:80px 24px;
+  }
+  .sec-label{
+    font-family:'Syne',sans-serif;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--verde-c);
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .sec-label::before{content:'';display:block;width:20px;height:2px;background:var(--verde-c)}
+  h2{
+    font-family:'Syne',sans-serif;
+    font-size:clamp(28px,4vw,42px);
+    font-weight:800;
+    color:var(--verde);
+    line-height:1.15;
+    letter-spacing:-.02em;
+    margin-bottom:16px;
+  }
+  h2 em{font-style:normal;color:var(--ouro)}
+  .sec-sub{
+    font-size:17px;
+    color:var(--cinza);
+    max-width:560px;
+    line-height:1.65;
+    margin-bottom:48px;
+  }
+  .pain-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+  }
+  .pain-card{
+    background:var(--bg);
+    border:1px solid var(--borda);
+    border-radius:12px;
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .pain-icon{
+    font-size:28px;
+    line-height:1;
+  }
+  .pain-card h3{
+    font-family:'Syne',sans-serif;
+    font-size:15px;
+    font-weight:700;
+    color:var(--verde);
+  }
+  .pain-card p{
+    font-size:14px;
+    color:var(--cinza);
+    line-height:1.6;
+  }
+
+  /* ── O QUE VOCÊ VAI APRENDER ── */
+  .learn{
+    background:var(--bg);
+    padding:88px 24px;
+  }
+  .learn-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+    margin-top:44px;
+  }
+  .learn-item{
+    background:#FFFFFF;
+    border:1px solid var(--borda);
+    border-left:4px solid var(--verde-c);
+    border-radius:0 10px 10px 0;
+    padding:18px 20px;
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    transition:box-shadow .2s,transform .2s;
+  }
+  .learn-item:hover{
+    box-shadow:0 4px 20px rgba(0,0,0,0.07);
+    transform:translateX(3px);
+  }
+  .learn-num{
+    flex-shrink:0;
+    width:32px;height:32px;
+    background:var(--verde);
+    color:#FFFFFF;
+    font-family:'Syne',sans-serif;
+    font-size:13px;
+    font-weight:800;
+    border-radius:8px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .learn-text h4{
+    font-family:'Syne',sans-serif;
+    font-size:14px;
+    font-weight:700;
+    color:var(--verde);
+    margin-bottom:3px;
+  }
+  .learn-text p{font-size:13px;color:var(--cinza);line-height:1.55}
+
+  /* ── PARA QUEM É ── */
+  .forwho{
+    background:#FFFFFF;
+    padding:88px 24px;
+  }
+  .forwho-cols{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:48px;
+  }
+  .fw-col{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .fw-col-title{
+    font-family:'Syne',sans-serif;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    padding:10px 16px;
+    border-radius:8px;
+    margin-bottom:4px;
+  }
+  .fw-col-title.yes{background:#E8F5E9;color:#1B5E20}
+  .fw-col-title.no{background:#FBE9E7;color:#BF360C}
+  .fw-item{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    font-size:14px;
+    color:var(--texto);
+    line-height:1.55;
+    padding:10px 14px;
+    background:var(--bg);
+    border-radius:8px;
+  }
+  .fw-item .ic{flex-shrink:0;font-size:16px;margin-top:1px}
+
+  /* ── DEPOIMENTOS ── */
+  .testimonials{
+    background:var(--verde);
+    padding:88px 24px;
+    position:relative;
+    overflow:hidden;
+  }
+  .testimonials::before{
+    content:'';
+    position:absolute;
+    right:-120px;top:-120px;
+    width:500px;height:500px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.03);
+  }
+  .testimonials .sec-label{color:var(--ouro-c)}
+  .testimonials .sec-label::before{background:var(--ouro-c)}
+  .testimonials h2{color:#FFFFFF}
+  .test-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:44px;
+  }
+  .test-card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:12px;
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .test-stars{color:var(--ouro-c);font-size:15px;letter-spacing:2px}
+  .test-text{
+    font-size:14px;
+    color:rgba(255,255,255,0.82);
+    line-height:1.65;
+    font-style:italic;
+  }
+  .test-author{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+  .test-name{
+    font-family:'Syne',sans-serif;
+    font-weight:700;
+    font-size:13px;
+    color:#FFFFFF;
+  }
+  .test-role{font-size:12px;color:rgba(255,255,255,0.45)}
+
+  /* ── CONTEÚDO DO EBOOK ── */
+  .contents{
+    background:var(--bg);
+    padding:88px 24px;
+  }
+  .chapters{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:44px;
+  }
+  .chapter{
+    background:#FFFFFF;
+    border:1px solid var(--borda);
+    border-radius:10px;
+    padding:16px 20px;
+    display:flex;
+    gap:14px;
+    align-items:center;
+  }
+  .chapter-n{
+    flex-shrink:0;
+    font-family:'Syne',sans-serif;
+    font-size:11px;
+    font-weight:800;
+    color:var(--verde-m);
+    background:rgba(26,107,74,0.1);
+    padding:5px 10px;
+    border-radius:6px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+  }
+  .chapter-info h4{
+    font-family:'Syne',sans-serif;
+    font-size:13px;
+    font-weight:700;
+    color:var(--verde);
+    margin-bottom:2px;
+  }
+  .chapter-info p{font-size:12px;color:var(--cinza)}
+
+  /* ── BÔNUS ── */
+  .bonus{
+    background:#FFFFFF;
+    padding:80px 24px;
+    border-top:1px solid var(--borda);
+  }
+  .bonus-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:44px;
+  }
+  .bonus-card{
+    background:linear-gradient(145deg,#F5FFF8,#FFFFFF);
+    border:1.5px solid rgba(39,174,96,0.3);
+    border-radius:14px;
+    padding:24px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+    position:relative;
+    overflow:hidden;
+  }
+  .bonus-card::before{
+    content:'BÔNUS';
+    position:absolute;
+    top:12px;right:-20px;
+    background:var(--verde-c);
+    color:#FFFFFF;
+    font-family:'Syne',sans-serif;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.1em;
+    padding:4px 28px;
+    transform:rotate(35deg);
+  }
+  .bonus-icon{font-size:36px}
+  .bonus-card h3{
+    font-family:'Syne',sans-serif;
+    font-size:14px;
+    font-weight:700;
+    color:var(--verde);
+  }
+  .bonus-card p{font-size:13px;color:var(--cinza);line-height:1.55}
+  .bonus-val{
+    font-family:'Syne',sans-serif;
+    font-size:13px;
+    font-weight:700;
+    color:var(--verde-c);
+    background:rgba(39,174,96,0.1);
+    padding:4px 12px;
+    border-radius:100px;
+  }
+
+  /* ── OFERTA FINAL ── */
+  .offer{
+    background:var(--verde);
+    padding:96px 24px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .offer::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:radial-gradient(ellipse 70% 70% at 50% 50%,rgba(26,107,74,0.6) 0%,transparent 70%);
+  }
+  .offer-inner{
+    position:relative;
+    z-index:2;
+    max-width:600px;
+    margin:0 auto;
+  }
+  .offer-badge{
+    display:inline-block;
+    background:var(--ouro);
+    color:#FFFFFF;
+    font-family:'Syne',sans-serif;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    padding:6px 18px;
+    border-radius:100px;
+    margin-bottom:24px;
+  }
+  .offer h2{
+    color:#FFFFFF;
+    margin-bottom:14px;
+    font-size:clamp(30px,5vw,48px);
+  }
+  .offer-sub{
+    font-size:17px;
+    color:rgba(255,255,255,0.75);
+    margin-bottom:40px;
+    line-height:1.65;
+  }
+  .price-block{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
+    border-radius:18px;
+    padding:36px;
+    margin-bottom:28px;
+  }
+  .de-por{
+    font-size:13px;
+    color:rgba(255,255,255,0.5);
+    margin-bottom:4px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+  }
+  .price-display{
+    display:flex;
+    align-items:baseline;
+    justify-content:center;
+    gap:14px;
+    margin-bottom:6px;
+  }
+  .price-riscado{
+    font-size:20px;
+    color:rgba(255,255,255,0.35);
+    text-decoration:line-through;
+  }
+  .price-final{
+    font-family:'Syne',sans-serif;
+    font-size:58px;
+    font-weight:800;
+    color:#FFFFFF;
+    line-height:1;
+  }
+  .price-final sup{font-size:24px;vertical-align:top;margin-top:10px}
+  .price-desc{
+    font-size:13px;
+    color:rgba(255,255,255,0.55);
+    margin-bottom:28px;
+  }
+  .btn-cta-big{
+    display:inline-block;
+    background:linear-gradient(135deg,#C9921A 0%,#F0C040 100%);
+    color:#0D3B2E;
+    font-family:'Syne',sans-serif;
+    font-size:18px;
+    font-weight:800;
+    padding:20px 48px;
+    border-radius:12px;
+    text-decoration:none;
+    letter-spacing:.04em;
+    cursor:pointer;
+    border:none;
+    box-shadow:0 10px 30px rgba(201,146,26,0.45);
+    transition:all .25s;
+  }
+  .btn-cta-big:hover{
+    transform:translateY(-3px);
+    box-shadow:0 16px 40px rgba(201,146,26,0.6);
+  }
+  .guarantee{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:24px;
+    font-size:13px;
+    color:rgba(255,255,255,0.5);
+  }
+  .guarantee .icon{font-size:20px}
+
+  /* ── GARANTIA ── */
+  .warranty{
+    background:var(--bg);
+    padding:72px 24px;
+  }
+  .warranty-inner{
+    max-width:700px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .warranty-icon{font-size:64px;margin-bottom:20px}
+  .warranty h2{margin-bottom:12px}
+  .warranty p{font-size:16px;color:var(--cinza);line-height:1.7}
+
+  /* ── FAQ ── */
+  .faq{
+    background:#FFFFFF;
+    padding:88px 24px;
+  }
+  .faq-list{
+    max-width:720px;
+    margin:44px auto 0;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .faq-item{
+    border:1px solid var(--borda);
+    border-radius:10px;
+    overflow:hidden;
+  }
+  .faq-q{
+    padding:18px 20px;
+    font-family:'Syne',sans-serif;
+    font-size:14px;
+    font-weight:700;
+    color:var(--verde);
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#FFFFFF;
+    transition:background .2s;
+  }
+  .faq-q:hover{background:var(--bg)}
+  .faq-q .arr{
+    font-size:18px;
+    transition:transform .3s;
+    color:var(--verde-c);
+  }
+  .faq-a{
+    padding:0 20px;
+    font-size:14px;
+    color:var(--cinza);
+    line-height:1.65;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease, padding .35s;
+  }
+  .faq-item.open .faq-a{
+    max-height:200px;
+    padding:0 20px 18px;
+  }
+  .faq-item.open .arr{transform:rotate(180deg)}
+
+  /* ── FOOTER ── */
+  footer{
+    background:var(--verde);
+    padding:40px 24px;
+    text-align:center;
+  }
+  .footer-logo{
+    font-family:'Syne',sans-serif;
+    font-size:20px;
+    font-weight:800;
+    color:#FFFFFF;
+    margin-bottom:8px;
+  }
+  .footer-logo em{font-style:normal;color:var(--ouro-c)}
+  footer p{font-size:13px;color:rgba(255,255,255,0.45)}
+
+  /* ── STICKY BAR ── */
+  .sticky-bar{
+    position:fixed;
+    bottom:0;left:0;right:0;
+    background:var(--verde);
+    border-top:2px solid var(--ouro);
+    z-index:100;
+    padding:12px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    box-shadow:0 -8px 30px rgba(0,0,0,0.25);
+    transform:translateY(100%);
+    transition:transform .4s cubic-bezier(.16,1,.3,1);
+  }
+  .sticky-bar.visible{transform:translateY(0)}
+  .sticky-text{
+    font-family:'Syne',sans-serif;
+    font-size:14px;
+    font-weight:700;
+    color:#FFFFFF;
+  }
+  .sticky-text span{color:var(--ouro-c)}
+  .sticky-btn{
+    flex-shrink:0;
+    background:linear-gradient(135deg,#C9921A,#F0C040);
+    color:#0D3B2E;
+    font-family:'Syne',sans-serif;
+    font-size:13px;
+    font-weight:800;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    cursor:pointer;
+    border:none;
+    white-space:nowrap;
+  }
+
+  /* ── CONTADOR ── */
+  .countdown{
+    display:flex;
+    gap:8px;
+    margin-bottom:20px;
+    justify-content:center;
+  }
+  .cd-block{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2px;
+  }
+  .cd-n{
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:8px;
+    font-family:'Syne',sans-serif;
+    font-size:28px;
+    font-weight:800;
+    color:#FFFFFF;
+    width:56px;
+    height:52px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .cd-l{font-size:10px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:.06em}
+  .cd-sep{
+    font-family:'Syne',sans-serif;
+    font-size:24px;
+    font-weight:800;
+    color:rgba(255,255,255,0.4);
+    padding-top:8px;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:768px){
+    .hero-inner{grid-template-columns:1fr;gap:40px}
+    .book-wrap{order:-1}
+    .pain-grid,.test-grid,.bonus-grid{grid-template-columns:1fr}
+    .learn-grid,.forwho-cols,.chapters{grid-template-columns:1fr}
+    .hero-stats{gap:20px}
+    .sticky-text{font-size:12px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ══ STICKY BAR ══ -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-text">🔥 Oferta especial — <span>economize agora</span></div>
+  <button class="sticky-btn" onclick="window.open('https://pay.kiwify.com.br/ycHuff6','_blank')">QUERO REDUZIR MEUS IMPOSTOS →</button>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="badge">Guia Definitivo 2026</div>
+      <h1>Pare de Pagar <em>Impostos a Mais</em> e Recupere o Dinheiro da Sua Empresa</h1>
+      <p class="hero-sub">O guia completo e atualizado com a Reforma Tributária de 2026 para empresários que querem reduzir a carga tributária de forma 100% legal, segura e comprovada.</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">10+</span><span class="stat-l">Capítulos</span></div>
+        <div class="stat"><span class="stat-n">95%</span><span class="stat-l">Erram nos impostos</span></div>
+        <div class="stat"><span class="stat-n">40%</span><span class="stat-l">Economia possível</span></div>
+        <div class="stat"><span class="stat-n">2026</span><span class="stat-l">100% atualizado</span></div>
+      </div>
+      <div class="cta-hero-box">
+        <div class="price-row">
+          <span class="price-old">R$ 197</span>
+          <span class="price-new"><span>R$</span> 47</span>
+        </div>
+        <p class="price-note">Acesso imediato • PDF completo • Atualizado com a Reforma 2026</p>
+        <button class="btn-primary" onclick="window.open('https://pay.kiwify.com.br/ycHuff6','_blank')">🔓 QUERO MEU EBOOK AGORA</button>
+        <div class="trust-line">Garantia de 7 dias • Pagamento seguro</div>
+      </div>
+    </div>
+    <div class="book-wrap">
+      <div class="book">
+        <div class="book-spine"></div>
+        <div class="book-front">
+          <div class="book-circle"></div>
+          <div>
+            <div class="book-tag">Guia Tributário</div>
+          </div>
+          <div class="book-title">
+            <em>Imposto</em>
+            INTELIGENTE
+          </div>
+          <div>
+            <div style="color:rgba(255,255,255,0.55);font-size:11px;margin-bottom:4px">Como Reduzir Legalmente a<br>Carga Tributária da Sua Empresa</div>
+            <div class="book-year">2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DORES ══ -->
+<section class="pain">
+  <div class="container">
+    <div class="sec-label">Você se identifica?</div>
+    <h2>Sua empresa está <em>sangrando</em> em impostos desnecessários</h2>
+    <p class="sec-sub">Segundo o IBPT, 95% das empresas brasileiras pagam mais impostos do que deveriam. Veja se você se enquadra em alguma dessas situações.</p>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-icon">😰</div>
+        <h3>Nunca revisou o regime tributário</h3>
+        <p>Está no Simples desde que abriu a empresa e nunca verificou se ainda é o melhor regime para o seu negócio atual.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">💸</div>
+        <h3>Sente que paga imposto demais</h3>
+        <p>Trabalha muito, fatura bem, mas no final do mês o saldo não reflete o esforço — e grande parte vai para os cofres públicos.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">😕</div>
+        <h3>Não entende a Reforma Tributária</h3>
+        <p>Ouviu falar do IVA Dual, CBS e IBS, mas não sabe se isso vai aumentar ou diminuir a carga da sua empresa em 2026.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">📋</div>
+        <h3>Contador só fecha guias</h3>
+        <p>Seu contador é operacional, não estratégico. Ele cumpre as obrigações, mas não te orienta sobre como pagar menos legalmente.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">🏦</div>
+        <h3>Não conhece os benefícios fiscais</h3>
+        <p>Existem dezenas de incentivos legais que sua empresa pode estar deixando de aproveitar — e custando milhares por ano.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">⚖️</div>
+        <h3>Medo de fazer algo ilegal</h3>
+        <p>Prefere pagar tudo o que a Receita cobra a arriscar uma autuação — sem saber que existe um caminho legal e seguro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ APRENDIZADO ══ -->
+<section class="learn">
+  <div class="container">
+    <div class="sec-label">Conteúdo do ebook</div>
+    <h2>Tudo que você vai aprender neste <em>guia completo</em></h2>
+    <p class="sec-sub">10 capítulos densos e práticos, com estratégias que você pode implementar imediatamente na sua empresa.</p>
+    <div class="learn-grid">
+      <div class="learn-item">
+        <div class="learn-num">01</div>
+        <div class="learn-text">
+          <h4>O Cenário Tributário 2026</h4>
+          <p>Entenda o impacto real da Reforma Tributária e o que muda para sua empresa com o IVA Dual (CBS + IBS).</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">02</div>
+        <div class="learn-text">
+          <h4>Simples × Presumido × Real</h4>
+          <p>Como escolher o regime tributário certo e quanto você pode economizar migrando de regime.</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">03</div>
+        <div class="learn-text">
+          <h4>Os 7 Pilares do Planejamento</h4>
+          <p>O framework completo para organizar a estrutura fiscal da sua empresa e eliminar pagamentos desnecessários.</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">04</div>
+        <div class="learn-text">
+          <h4>Oportunidades na Reforma 2026</h4>
+          <p>Como aproveitar o período de transição e os novos créditos do IVA Dual para reduzir sua carga tributária.</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">05</div>
+        <div class="learn-text">
+          <h4>Estratégias Avançadas</h4>
+          <p>Pró-labore vs. lucros, Lei do Bem, ICMS estadual, Zone Franca, antecipação de despesas e muito mais.</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">06</div>
+        <div class="learn-text">
+          <h4>Folha de Pagamento Eficiente</h4>
+          <p>Como reduzir INSS patronal, PLR, benefícios não salariais e desoneração da folha por setor.</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">07</div>
+        <div class="learn-text">
+          <h4>Holdings e Estrutura Societária</h4>
+          <p>Como uma holding pode reduzir impostos sobre aluguéis de 27,5% para ~11% e proteger seu patrimônio.</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">08</div>
+        <div class="learn-text">
+          <h4>Créditos e Recuperação Tributária</h4>
+          <p>Como identificar e recuperar impostos pagos a mais nos últimos 5 anos — um dinheiro que é seu.</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">09</div>
+        <div class="learn-text">
+          <h4>Os 7 Erros Fatais</h4>
+          <p>Os erros mais comuns que fazem empresas pagarem mais impostos do que deveriam — e como evitá-los.</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">10</div>
+        <div class="learn-text">
+          <h4>Plano de Ação — 30 Dias</h4>
+          <p>Um roteiro semana a semana para implementar todas as estratégias e começar a economizar imediatamente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PARA QUEM É ══ -->
+<section class="forwho">
+  <div class="container">
+    <div class="sec-label">Público ideal</div>
+    <h2>Este guia é <em>para você</em> se...</h2>
+    <div class="forwho-cols">
+      <div class="fw-col">
+        <div class="fw-col-title yes">✅ É para você</div>
+        <div class="fw-item"><span class="ic">🏪</span>Você é dono(a) de empresa (MEI, ME, EPP ou Ltda)</div>
+        <div class="fw-item"><span class="ic">📊</span>Quer entender como pagar menos impostos legalmente</div>
+        <div class="fw-item"><span class="ic">🔄</span>Está em dúvida sobre qual regime tributário é o melhor</div>
+        <div class="fw-item"><span class="ic">🏗️</span>Quer estruturar sua empresa de forma mais eficiente</div>
+        <div class="fw-item"><span class="ic">📅</span>Precisa entender o impacto da Reforma Tributária 2026</div>
+        <div class="fw-item"><span class="ic">💰</span>Quer recuperar créditos tributários não aproveitados</div>
+      </div>
+      <div class="fw-col">
+        <div class="fw-col-title no">❌ Não é para você</div>
+        <div class="fw-item"><span class="ic">🚫</span>Se busca formas de sonegar impostos ou agir ilegalmente</div>
+        <div class="fw-item"><span class="ic">🚫</span>Se não tem empresa aberta (pessoa física sem CNPJ)</div>
+        <div class="fw-item"><span class="ic">🚫</span>Se já tem toda a estrutura tributária otimizada com especialista</div>
+        <div class="fw-item"><span class="ic">🚫</span>Se espera uma solução mágica sem qualquer esforço de implementação</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DEPOIMENTOS ══ -->
+<section class="testimonials">
+  <div class="container">
+    <div class="sec-label">Resultados reais</div>
+    <h2>O que dizem quem já aplicou as estratégias</h2>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"Migrei do Simples para o Lucro Presumido depois de uma simulação que aprendi com esse guia. Resultado: economizo R$ 4.200 por mês. Em um ano, paguei o equivalente a um funcionário a mais."</p>
+        <div class="test-author">
+          <span class="test-name">Marcos A.</span>
+          <span class="test-role">Dono de clínica odontológica, SP</span>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"Descobri que tinha créditos de PIS/COFINS não aproveitados por 3 anos. Recuperamos mais de R$ 68 mil junto à Receita. O guia me deu o conhecimento para cobrar isso do meu contador."</p>
+        <div class="test-author">
+          <span class="test-name">Fernanda C.</span>
+          <span class="test-role">Gestora de e-commerce, MG</span>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">"Criamos uma holding patrimonial para os imóveis da empresa. O imposto sobre aluguéis caiu de 27,5% para 11,33%. Em uma carteira de R$ 40k/mês em aluguéis, a economia é enorme."</p>
+        <div class="test-author">
+          <span class="test-name">Roberto L.</span>
+          <span class="test-role">Empresário do setor imobiliário, RJ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BÔNUS ══ -->
+<section class="bonus">
+  <div class="container">
+    <div class="sec-label">Incluído na compra</div>
+    <h2>3 <em>Bônus Exclusivos</em> para você implementar mais rápido</h2>
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <div class="bonus-icon">📊</div>
+        <h3>Planilha de Simulação Tributária</h3>
+        <p>Simule os três regimes tributários com os dados da sua empresa e descubra qual gera mais economia.</p>
+        <div class="bonus-val">Valor: R$ 97 — GRÁTIS</div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-icon">✅</div>
+        <h3>Checklist de Planejamento Tributário</h3>
+        <p>Lista completa com 40 pontos de verificação para garantir que nenhuma oportunidade de economia seja perdida.</p>
+        <div class="bonus-val">Valor: R$ 47 — GRÁTIS</div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-icon">📅</div>
+        <h3>Calendário Tributário 2026</h3>
+        <p>Todos os prazos importantes da Reforma Tributária e obrigações fiscais de 2026 em um calendário visual.</p>
+        <div class="bonus-val">Valor: R$ 37 — GRÁTIS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ OFERTA FINAL ══ -->
+<section class="offer" id="oferta">
+  <div class="offer-inner">
+    <div class="offer-badge">⚡ Oferta por tempo limitado</div>
+    <h2>Comece a Economizar <em>Ainda Hoje</em></h2>
+    <p class="offer-sub">Acesso imediato ao ebook completo + 3 bônus exclusivos. Tudo que você precisa para pagar menos imposto legalmente em 2026.</p>
+
+    <div class="countdown" id="countdown">
+      <div class="cd-block"><div class="cd-n" id="cdH">01</div><div class="cd-l">Horas</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-block"><div class="cd-n" id="cdM">47</div><div class="cd-l">Minutos</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-block"><div class="cd-n" id="cdS">00</div><div class="cd-l">Segundos</div></div>
+    </div>
+
+    <div class="price-block">
+      <div class="de-por">De R$ 197 por apenas</div>
+      <div class="price-display">
+        <span class="price-riscado">R$ 197</span>
+        <div class="price-final"><sup>R$</sup>47</div>
+      </div>
+      <p class="price-desc">Pagamento único • Acesso imediato • PDF em alta resolução</p>
+      <button class="btn-cta-big" onclick="window.open('https://pay.kiwify.com.br/ycHuff6','_blank')">🔓 QUERO MEU EBOOK POR R$ 47 AGORA</button>
+    </div>
+
+    <div class="guarantee">
+      <span class="icon">🛡️</span>
+      <span>Garantia incondicional de 7 dias. Não gostou? Devolvemos 100% do valor.</span>
+    </div>
+
+    <p style="margin-top:24px;font-size:12px;color:rgba(255,255,255,0.35)">
+      Ebook + 3 bônus · PDF instantâneo · Atualizado com Reforma 2026 · Conteúdo 100% legal
+    </p>
+  </div>
+</section>
+
+<!-- ══ GARANTIA ══ -->
+<section class="warranty">
+  <div class="warranty-inner">
+    <div class="warranty-icon">🛡️</div>
+    <div class="sec-label" style="justify-content:center">Sua segurança em primeiro lugar</div>
+    <h2>Garantia Incondicional de <em>7 Dias</em></h2>
+    <p>Se por qualquer motivo você não ficar satisfeito com o conteúdo, basta enviar um e-mail em até 7 dias após a compra e devolveremos 100% do seu investimento. Sem perguntas, sem burocracia. Assumimos todo o risco porque temos certeza do valor que este guia vai gerar para o seu negócio.</p>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="faq">
+  <div class="container" style="text-align:center">
+    <div class="sec-label" style="justify-content:center">Perguntas frequentes</div>
+    <h2>Ficou alguma <em>dúvida</em>?</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">O conteúdo é realmente 100% legal? <span class="arr">▾</span></div>
+        <div class="faq-a">Sim. Todo o conteúdo do guia é baseado em elisão fiscal (não evasão). Todas as estratégias apresentadas estão previstas na legislação brasileira vigente. O objetivo é ajudar você a pagar o mínimo legal — não um centavo a mais.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Preciso ser contador para entender o material? <span class="arr">▾</span></div>
+        <div class="faq-a">Não. O guia foi escrito pensando no empresário, não no contador. A linguagem é clara, objetiva e com exemplos práticos. Você vai entender perfeitamente — e vai conseguir ter conversas muito mais produtivas com seu contador depois da leitura.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Vale para empresas do Simples Nacional? <span class="arr">▾</span></div>
+        <div class="faq-a">Sim! Há conteúdo específico para empresas do Simples, incluindo quando faz sentido migrar para outro regime, como funciona a opção anual e os impactos da Reforma Tributária para optantes do Simples.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Está atualizado com a Reforma Tributária 2026? <span class="arr">▾</span></div>
+        <div class="faq-a">Sim. O guia foi completamente atualizado com as mudanças da Reforma Tributária de 2026, incluindo CBS, IBS, IVA Dual, período de transição, oportunidades de crédito e impacto por setor.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Como recebo o ebook após a compra? <span class="arr">▾</span></div>
+        <div class="faq-a">Imediatamente após a confirmação do pagamento, você recebe um e-mail com o link para download do PDF em alta resolução. O acesso é instantâneo, 24 horas por dia, 7 dias por semana.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-logo">Imposto <em>Inteligente</em> 2026</div>
+  <p>© 2026 — Guia Completo de Planejamento Tributário para Empresários Brasileiros</p>
+  <p style="margin-top:8px">Este material tem fins educativos. Consulte sempre um profissional contábil ou tributarista para aplicação específica.</p>
+</footer>
+
+<script>
+// FAQ Toggle
+function toggleFaq(el){
+  const item = el.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!isOpen) item.classList.add('open');
+}
+
+// Sticky bar
+const stickyBar = document.getElementById('stickyBar');
+window.addEventListener('scroll',()=>{
+  if(window.scrollY > 600) stickyBar.classList.add('visible');
+  else stickyBar.classList.remove('visible');
+});
+
+// Contador regressivo
+function startCountdown(){
+  const saved = localStorage.getItem('cdEnd');
+  let end;
+  if(saved) { end = parseInt(saved); }
+  else {
+    end = Date.now() + (1*60*60 + 47*60) * 1000;
+    try{ localStorage.setItem('cdEnd', end); }catch(e){}
+  }
+  function tick(){
+    const diff = Math.max(0, end - Date.now());
+    const h = Math.floor(diff/3600000);
+    const m = Math.floor((diff%3600000)/60000);
+    const s = Math.floor((diff%60000)/1000);
+    document.getElementById('cdH').textContent = String(h).padStart(2,'0');
+    document.getElementById('cdM').textContent = String(m).padStart(2,'0');
+    document.getElementById('cdS').textContent = String(s).padStart(2,'0');
+    if(diff > 0) setTimeout(tick, 1000);
+  }
+  tick();
+}
+startCountdown();
+
+// Animação de entrada nos cards
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0)';
+    }
+  });
+},{threshold:0.15});
+document.querySelectorAll('.pain-card,.learn-item,.test-card,.bonus-card,.chapter').forEach(el=>{
+  el.style.opacity='0';
+  el.style.transform='translateY(20px)';
+  el.style.transition='opacity .5s ease, transform .5s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
